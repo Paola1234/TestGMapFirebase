@@ -1,0 +1,744 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		28E2DE1D23736B380021D8FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E2DE1C23736B380021D8FF /* AppDelegate.swift */; };
+		28E2DE1F23736B380021D8FF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E2DE1E23736B380021D8FF /* SceneDelegate.swift */; };
+		28E2DE2123736B380021D8FF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E2DE2023736B380021D8FF /* ViewController.swift */; };
+		28E2DE2423736B380021D8FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28E2DE2223736B380021D8FF /* Main.storyboard */; };
+		28E2DE2623736B460021D8FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28E2DE2523736B460021D8FF /* Assets.xcassets */; };
+		28E2DE2923736B460021D8FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28E2DE2723736B460021D8FF /* LaunchScreen.storyboard */; };
+		28E2DE3423736B470021D8FF /* TestGMapFirebaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E2DE3323736B470021D8FF /* TestGMapFirebaseTests.swift */; };
+		28E2DE3F23736B470021D8FF /* TestGMapFirebaseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E2DE3E23736B470021D8FF /* TestGMapFirebaseUITests.swift */; };
+		3695DB325419E8CC8EA4BFC2 /* Pods_TestGMapFirebaseTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 661F19CEA4874DE1DAEB970F /* Pods_TestGMapFirebaseTests.framework */; };
+		5A3ACE12B0F9475C66B7BFE3 /* Pods_TestGMapFirebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A1540B43A39C920B7FF7ABD /* Pods_TestGMapFirebase.framework */; };
+		8F36176AB97321F7C6DBFB96 /* Pods_TestGMapFirebase_TestGMapFirebaseUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA4A140C0165D2DF85A1E2AC /* Pods_TestGMapFirebase_TestGMapFirebaseUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		28E2DE3023736B470021D8FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 28E2DE1123736B370021D8FF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 28E2DE1823736B370021D8FF;
+			remoteInfo = TestGMapFirebase;
+		};
+		28E2DE3B23736B470021D8FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 28E2DE1123736B370021D8FF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 28E2DE1823736B370021D8FF;
+			remoteInfo = TestGMapFirebase;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0A1540B43A39C920B7FF7ABD /* Pods_TestGMapFirebase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestGMapFirebase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0DF5BA5507C45275E917C0AA /* Pods-TestGMapFirebase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestGMapFirebase.release.xcconfig"; path = "Target Support Files/Pods-TestGMapFirebase/Pods-TestGMapFirebase.release.xcconfig"; sourceTree = "<group>"; };
+		28E2DE1923736B380021D8FF /* TestGMapFirebase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestGMapFirebase.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		28E2DE1C23736B380021D8FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		28E2DE1E23736B380021D8FF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		28E2DE2023736B380021D8FF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		28E2DE2323736B380021D8FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		28E2DE2523736B460021D8FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		28E2DE2823736B460021D8FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		28E2DE2A23736B460021D8FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28E2DE2F23736B470021D8FF /* TestGMapFirebaseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestGMapFirebaseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		28E2DE3323736B470021D8FF /* TestGMapFirebaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestGMapFirebaseTests.swift; sourceTree = "<group>"; };
+		28E2DE3523736B470021D8FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28E2DE3A23736B470021D8FF /* TestGMapFirebaseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestGMapFirebaseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		28E2DE3E23736B470021D8FF /* TestGMapFirebaseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestGMapFirebaseUITests.swift; sourceTree = "<group>"; };
+		28E2DE4023736B470021D8FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		37514A1058B3D539BA722552 /* Pods-TestGMapFirebaseTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestGMapFirebaseTests.release.xcconfig"; path = "Target Support Files/Pods-TestGMapFirebaseTests/Pods-TestGMapFirebaseTests.release.xcconfig"; sourceTree = "<group>"; };
+		661F19CEA4874DE1DAEB970F /* Pods_TestGMapFirebaseTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestGMapFirebaseTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A46568E6C633CD43527C6635 /* Pods-TestGMapFirebase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestGMapFirebase.debug.xcconfig"; path = "Target Support Files/Pods-TestGMapFirebase/Pods-TestGMapFirebase.debug.xcconfig"; sourceTree = "<group>"; };
+		ABFAF5988ABD4133C1C5AEFE /* Pods-TestGMapFirebase-TestGMapFirebaseUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestGMapFirebase-TestGMapFirebaseUITests.release.xcconfig"; path = "Target Support Files/Pods-TestGMapFirebase-TestGMapFirebaseUITests/Pods-TestGMapFirebase-TestGMapFirebaseUITests.release.xcconfig"; sourceTree = "<group>"; };
+		CA4A140C0165D2DF85A1E2AC /* Pods_TestGMapFirebase_TestGMapFirebaseUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestGMapFirebase_TestGMapFirebaseUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC6AB6B2C6EF6FCB5B6A64B1 /* Pods-TestGMapFirebaseTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestGMapFirebaseTests.debug.xcconfig"; path = "Target Support Files/Pods-TestGMapFirebaseTests/Pods-TestGMapFirebaseTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E96E6ECF765184CDCBA48DA3 /* Pods-TestGMapFirebase-TestGMapFirebaseUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestGMapFirebase-TestGMapFirebaseUITests.debug.xcconfig"; path = "Target Support Files/Pods-TestGMapFirebase-TestGMapFirebaseUITests/Pods-TestGMapFirebase-TestGMapFirebaseUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		28E2DE1623736B370021D8FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A3ACE12B0F9475C66B7BFE3 /* Pods_TestGMapFirebase.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28E2DE2C23736B470021D8FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3695DB325419E8CC8EA4BFC2 /* Pods_TestGMapFirebaseTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28E2DE3723736B470021D8FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F36176AB97321F7C6DBFB96 /* Pods_TestGMapFirebase_TestGMapFirebaseUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		10FDD357438904953213508A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A46568E6C633CD43527C6635 /* Pods-TestGMapFirebase.debug.xcconfig */,
+				0DF5BA5507C45275E917C0AA /* Pods-TestGMapFirebase.release.xcconfig */,
+				E96E6ECF765184CDCBA48DA3 /* Pods-TestGMapFirebase-TestGMapFirebaseUITests.debug.xcconfig */,
+				ABFAF5988ABD4133C1C5AEFE /* Pods-TestGMapFirebase-TestGMapFirebaseUITests.release.xcconfig */,
+				CC6AB6B2C6EF6FCB5B6A64B1 /* Pods-TestGMapFirebaseTests.debug.xcconfig */,
+				37514A1058B3D539BA722552 /* Pods-TestGMapFirebaseTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		28E2DE1023736B370021D8FF = {
+			isa = PBXGroup;
+			children = (
+				28E2DE1B23736B380021D8FF /* TestGMapFirebase */,
+				28E2DE3223736B470021D8FF /* TestGMapFirebaseTests */,
+				28E2DE3D23736B470021D8FF /* TestGMapFirebaseUITests */,
+				28E2DE1A23736B380021D8FF /* Products */,
+				10FDD357438904953213508A /* Pods */,
+				BB527C2A1C94AF68922E37AA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		28E2DE1A23736B380021D8FF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				28E2DE1923736B380021D8FF /* TestGMapFirebase.app */,
+				28E2DE2F23736B470021D8FF /* TestGMapFirebaseTests.xctest */,
+				28E2DE3A23736B470021D8FF /* TestGMapFirebaseUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		28E2DE1B23736B380021D8FF /* TestGMapFirebase */ = {
+			isa = PBXGroup;
+			children = (
+				28E2DE1C23736B380021D8FF /* AppDelegate.swift */,
+				28E2DE1E23736B380021D8FF /* SceneDelegate.swift */,
+				28E2DE2023736B380021D8FF /* ViewController.swift */,
+				28E2DE2223736B380021D8FF /* Main.storyboard */,
+				28E2DE2523736B460021D8FF /* Assets.xcassets */,
+				28E2DE2723736B460021D8FF /* LaunchScreen.storyboard */,
+				28E2DE2A23736B460021D8FF /* Info.plist */,
+			);
+			path = TestGMapFirebase;
+			sourceTree = "<group>";
+		};
+		28E2DE3223736B470021D8FF /* TestGMapFirebaseTests */ = {
+			isa = PBXGroup;
+			children = (
+				28E2DE3323736B470021D8FF /* TestGMapFirebaseTests.swift */,
+				28E2DE3523736B470021D8FF /* Info.plist */,
+			);
+			path = TestGMapFirebaseTests;
+			sourceTree = "<group>";
+		};
+		28E2DE3D23736B470021D8FF /* TestGMapFirebaseUITests */ = {
+			isa = PBXGroup;
+			children = (
+				28E2DE3E23736B470021D8FF /* TestGMapFirebaseUITests.swift */,
+				28E2DE4023736B470021D8FF /* Info.plist */,
+			);
+			path = TestGMapFirebaseUITests;
+			sourceTree = "<group>";
+		};
+		BB527C2A1C94AF68922E37AA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0A1540B43A39C920B7FF7ABD /* Pods_TestGMapFirebase.framework */,
+				CA4A140C0165D2DF85A1E2AC /* Pods_TestGMapFirebase_TestGMapFirebaseUITests.framework */,
+				661F19CEA4874DE1DAEB970F /* Pods_TestGMapFirebaseTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		28E2DE1823736B370021D8FF /* TestGMapFirebase */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28E2DE4323736B470021D8FF /* Build configuration list for PBXNativeTarget "TestGMapFirebase" */;
+			buildPhases = (
+				7A9B5366FA1671D1F2B6FE77 /* [CP] Check Pods Manifest.lock */,
+				28E2DE1523736B370021D8FF /* Sources */,
+				28E2DE1623736B370021D8FF /* Frameworks */,
+				28E2DE1723736B370021D8FF /* Resources */,
+				36FD4A85284E9AC55CF79993 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TestGMapFirebase;
+			productName = TestGMapFirebase;
+			productReference = 28E2DE1923736B380021D8FF /* TestGMapFirebase.app */;
+			productType = "com.apple.product-type.application";
+		};
+		28E2DE2E23736B470021D8FF /* TestGMapFirebaseTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28E2DE4623736B470021D8FF /* Build configuration list for PBXNativeTarget "TestGMapFirebaseTests" */;
+			buildPhases = (
+				CAB4E40F2B5C263CF6A3AE81 /* [CP] Check Pods Manifest.lock */,
+				28E2DE2B23736B470021D8FF /* Sources */,
+				28E2DE2C23736B470021D8FF /* Frameworks */,
+				28E2DE2D23736B470021D8FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				28E2DE3123736B470021D8FF /* PBXTargetDependency */,
+			);
+			name = TestGMapFirebaseTests;
+			productName = TestGMapFirebaseTests;
+			productReference = 28E2DE2F23736B470021D8FF /* TestGMapFirebaseTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		28E2DE3923736B470021D8FF /* TestGMapFirebaseUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28E2DE4923736B470021D8FF /* Build configuration list for PBXNativeTarget "TestGMapFirebaseUITests" */;
+			buildPhases = (
+				C4A57C1DA474D10983C1A221 /* [CP] Check Pods Manifest.lock */,
+				28E2DE3623736B470021D8FF /* Sources */,
+				28E2DE3723736B470021D8FF /* Frameworks */,
+				28E2DE3823736B470021D8FF /* Resources */,
+				1AB80D3B2DDF95C2889E6855 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				28E2DE3C23736B470021D8FF /* PBXTargetDependency */,
+			);
+			name = TestGMapFirebaseUITests;
+			productName = TestGMapFirebaseUITests;
+			productReference = 28E2DE3A23736B470021D8FF /* TestGMapFirebaseUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		28E2DE1123736B370021D8FF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1110;
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = "LADY PAOLA LATINO TOVAR";
+				TargetAttributes = {
+					28E2DE1823736B370021D8FF = {
+						CreatedOnToolsVersion = 11.1;
+					};
+					28E2DE2E23736B470021D8FF = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = 28E2DE1823736B370021D8FF;
+					};
+					28E2DE3923736B470021D8FF = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = 28E2DE1823736B370021D8FF;
+					};
+				};
+			};
+			buildConfigurationList = 28E2DE1423736B370021D8FF /* Build configuration list for PBXProject "TestGMapFirebase" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 28E2DE1023736B370021D8FF;
+			productRefGroup = 28E2DE1A23736B380021D8FF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				28E2DE1823736B370021D8FF /* TestGMapFirebase */,
+				28E2DE2E23736B470021D8FF /* TestGMapFirebaseTests */,
+				28E2DE3923736B470021D8FF /* TestGMapFirebaseUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		28E2DE1723736B370021D8FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28E2DE2923736B460021D8FF /* LaunchScreen.storyboard in Resources */,
+				28E2DE2623736B460021D8FF /* Assets.xcassets in Resources */,
+				28E2DE2423736B380021D8FF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28E2DE2D23736B470021D8FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28E2DE3823736B470021D8FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1AB80D3B2DDF95C2889E6855 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TestGMapFirebase-TestGMapFirebaseUITests/Pods-TestGMapFirebase-TestGMapFirebaseUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TestGMapFirebase-TestGMapFirebaseUITests/Pods-TestGMapFirebase-TestGMapFirebaseUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TestGMapFirebase-TestGMapFirebaseUITests/Pods-TestGMapFirebase-TestGMapFirebaseUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		36FD4A85284E9AC55CF79993 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TestGMapFirebase/Pods-TestGMapFirebase-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TestGMapFirebase/Pods-TestGMapFirebase-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TestGMapFirebase/Pods-TestGMapFirebase-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7A9B5366FA1671D1F2B6FE77 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TestGMapFirebase-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C4A57C1DA474D10983C1A221 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TestGMapFirebase-TestGMapFirebaseUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CAB4E40F2B5C263CF6A3AE81 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TestGMapFirebaseTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		28E2DE1523736B370021D8FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28E2DE2123736B380021D8FF /* ViewController.swift in Sources */,
+				28E2DE1D23736B380021D8FF /* AppDelegate.swift in Sources */,
+				28E2DE1F23736B380021D8FF /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28E2DE2B23736B470021D8FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28E2DE3423736B470021D8FF /* TestGMapFirebaseTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28E2DE3623736B470021D8FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28E2DE3F23736B470021D8FF /* TestGMapFirebaseUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		28E2DE3123736B470021D8FF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 28E2DE1823736B370021D8FF /* TestGMapFirebase */;
+			targetProxy = 28E2DE3023736B470021D8FF /* PBXContainerItemProxy */;
+		};
+		28E2DE3C23736B470021D8FF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 28E2DE1823736B370021D8FF /* TestGMapFirebase */;
+			targetProxy = 28E2DE3B23736B470021D8FF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		28E2DE2223736B380021D8FF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				28E2DE2323736B380021D8FF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		28E2DE2723736B460021D8FF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				28E2DE2823736B460021D8FF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		28E2DE4123736B470021D8FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		28E2DE4223736B470021D8FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		28E2DE4423736B470021D8FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A46568E6C633CD43527C6635 /* Pods-TestGMapFirebase.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TestGMapFirebase/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wildproductions.TestGMapFirebase;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		28E2DE4523736B470021D8FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0DF5BA5507C45275E917C0AA /* Pods-TestGMapFirebase.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TestGMapFirebase/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wildproductions.TestGMapFirebase;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		28E2DE4723736B470021D8FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC6AB6B2C6EF6FCB5B6A64B1 /* Pods-TestGMapFirebaseTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TestGMapFirebaseTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wildproductions.TestGMapFirebaseTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestGMapFirebase.app/TestGMapFirebase";
+			};
+			name = Debug;
+		};
+		28E2DE4823736B470021D8FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37514A1058B3D539BA722552 /* Pods-TestGMapFirebaseTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TestGMapFirebaseTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wildproductions.TestGMapFirebaseTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestGMapFirebase.app/TestGMapFirebase";
+			};
+			name = Release;
+		};
+		28E2DE4A23736B470021D8FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E96E6ECF765184CDCBA48DA3 /* Pods-TestGMapFirebase-TestGMapFirebaseUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TestGMapFirebaseUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wildproductions.TestGMapFirebaseUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TestGMapFirebase;
+			};
+			name = Debug;
+		};
+		28E2DE4B23736B470021D8FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ABFAF5988ABD4133C1C5AEFE /* Pods-TestGMapFirebase-TestGMapFirebaseUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TestGMapFirebaseUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wildproductions.TestGMapFirebaseUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TestGMapFirebase;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		28E2DE1423736B370021D8FF /* Build configuration list for PBXProject "TestGMapFirebase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28E2DE4123736B470021D8FF /* Debug */,
+				28E2DE4223736B470021D8FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		28E2DE4323736B470021D8FF /* Build configuration list for PBXNativeTarget "TestGMapFirebase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28E2DE4423736B470021D8FF /* Debug */,
+				28E2DE4523736B470021D8FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		28E2DE4623736B470021D8FF /* Build configuration list for PBXNativeTarget "TestGMapFirebaseTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28E2DE4723736B470021D8FF /* Debug */,
+				28E2DE4823736B470021D8FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		28E2DE4923736B470021D8FF /* Build configuration list for PBXNativeTarget "TestGMapFirebaseUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28E2DE4A23736B470021D8FF /* Debug */,
+				28E2DE4B23736B470021D8FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 28E2DE1123736B370021D8FF /* Project object */;
+}
