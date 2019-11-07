@@ -7,14 +7,20 @@
 //
 
 import UIKit
+import GoogleMaps
 
-class ViewController: UIViewController {
+class ViewController: UIViewController{
 
+    @IBOutlet weak var myMapRoundedButton: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        self.myMapRoundedButton.layer.cornerRadius = 18
     }
-
-
+   
 }
+
+
 

@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		28B00778237383FC0057EAB7 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B00777237383FC0057EAB7 /* MapViewController.swift */; };
 		28E2DE1D23736B380021D8FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E2DE1C23736B380021D8FF /* AppDelegate.swift */; };
 		28E2DE1F23736B380021D8FF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E2DE1E23736B380021D8FF /* SceneDelegate.swift */; };
 		28E2DE2123736B380021D8FF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E2DE2023736B380021D8FF /* ViewController.swift */; };
@@ -40,6 +41,7 @@
 /* Begin PBXFileReference section */
 		0A1540B43A39C920B7FF7ABD /* Pods_TestGMapFirebase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestGMapFirebase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DF5BA5507C45275E917C0AA /* Pods-TestGMapFirebase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestGMapFirebase.release.xcconfig"; path = "Target Support Files/Pods-TestGMapFirebase/Pods-TestGMapFirebase.release.xcconfig"; sourceTree = "<group>"; };
+		28B00777237383FC0057EAB7 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		28E2DE1923736B380021D8FF /* TestGMapFirebase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestGMapFirebase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28E2DE1C23736B380021D8FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		28E2DE1E23736B380021D8FF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -101,7 +103,6 @@
 				CC6AB6B2C6EF6FCB5B6A64B1 /* Pods-TestGMapFirebaseTests.debug.xcconfig */,
 				37514A1058B3D539BA722552 /* Pods-TestGMapFirebaseTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -137,6 +138,7 @@
 				28E2DE2523736B460021D8FF /* Assets.xcassets */,
 				28E2DE2723736B460021D8FF /* LaunchScreen.storyboard */,
 				28E2DE2A23736B460021D8FF /* Info.plist */,
+				28B00777237383FC0057EAB7 /* MapViewController.swift */,
 			);
 			path = TestGMapFirebase;
 			sourceTree = "<group>";
@@ -411,6 +413,7 @@
 				28E2DE2123736B380021D8FF /* ViewController.swift in Sources */,
 				28E2DE1D23736B380021D8FF /* AppDelegate.swift in Sources */,
 				28E2DE1F23736B380021D8FF /* SceneDelegate.swift in Sources */,
+				28B00778237383FC0057EAB7 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
