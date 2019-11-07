@@ -12,10 +12,11 @@ import UIKit
 
 class RecyclingPlaces: GMSMarker {
   // 1
-  let place: GooglePlaces
+  //let place: GooglePlaces
+    let place
   
   // 2
-  init(place: GooglePlaces) {
+    init(place: ){//place: GooglePlaces) {
     self.place = place
     super.init()
     

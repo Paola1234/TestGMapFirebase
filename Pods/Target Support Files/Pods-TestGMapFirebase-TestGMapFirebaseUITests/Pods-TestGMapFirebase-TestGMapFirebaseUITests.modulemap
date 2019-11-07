@@ -1,6 +1,0 @@
-framework module Pods_TestGMapFirebase_TestGMapFirebaseUITests {
-  umbrella header "Pods-TestGMapFirebase-TestGMapFirebaseUITests-umbrella.h"
-
-  export *
-  module * { export * }
-}
