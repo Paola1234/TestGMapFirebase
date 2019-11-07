@@ -6,14 +6,7 @@ target 'TestGMapFirebase' do
   use_frameworks!
 
   # Pods for TestGMapFirebase
-	pod 'GoogleMaps'
-  target 'TestGMapFirebaseTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
-  target 'TestGMapFirebaseUITests' do
-    # Pods for testing
-  end
+  pod 'GooglePlaces'
+  pod 'GoogleMaps'
 
 end

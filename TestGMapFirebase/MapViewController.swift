@@ -103,8 +103,8 @@ extension MapViewController: GMSMapViewDelegate {
     func mapRecycle(_ mapRecycle: GMSMapView, idleAt position: GMSCameraPosition) {
       reverseGeocodeCoordinate(position.target)
     }
-    func mapRecycle(_ mapView: GMSMapView, willMove gesture: Bool) {
-        //self.labelLocation.lock()
+    func mapRecycle(_ mapRecycle: GMSMapView, willMove gesture: Bool) {
+//        Check why error: self.labelLocation.lock()
     }
     
 }
