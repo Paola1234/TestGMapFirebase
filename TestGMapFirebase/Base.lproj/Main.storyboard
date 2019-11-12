@@ -1,47 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xoL-FK-TTy">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="iob-pg-wtl">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TestGMapFirebase" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ibz-L1-PPm">
-                                <rect key="frame" x="99" y="316" width="177" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <rect key="contentStretch" x="1" y="0.0" width="1" height="1"/>
-                                <state key="normal" title="Map">
-                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="font">
-                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                    </preferredSymbolConfiguration>
-                                </state>
-                                <connections>
-                                    <segue destination="Zxu-pz-akw" kind="show" id="mXk-xP-z78"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="h3O-2J-Kd9"/>
-                    <connections>
-                        <outlet property="myMapRoundedButton" destination="ibz-L1-PPm" id="wLD-lA-fsJ"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1069.5999999999999" y="138.0809595202399"/>
-        </scene>
         <!--Map View Controller-->
         <scene sceneID="pEI-oZ-rjO">
             <objects>
@@ -55,7 +20,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.75" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jgP-3G-Z0A">
-                                <rect key="frame" x="0.0" y="633" width="375" height="21"/>
+                                <rect key="frame" x="0.0" y="641.5" width="375" height="20.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -67,8 +32,7 @@
                             <constraint firstItem="QcR-yD-Npt" firstAttribute="trailing" secondItem="jgP-3G-Z0A" secondAttribute="trailing" id="1Ub-hZ-abS"/>
                             <constraint firstItem="jgP-3G-Z0A" firstAttribute="leading" secondItem="QcR-yD-Npt" secondAttribute="leading" id="7fN-DQ-eg0"/>
                             <constraint firstItem="eNj-HC-CCT" firstAttribute="top" secondItem="QcR-yD-Npt" secondAttribute="top" id="9Tg-rd-Cb7"/>
-                            <constraint firstItem="QcR-yD-Npt" firstAttribute="bottom" secondItem="jgP-3G-Z0A" secondAttribute="bottom" constant="13" id="Ak2-Gn-sT5"/>
-                            <constraint firstItem="jgP-3G-Z0A" firstAttribute="top" secondItem="QcR-yD-Npt" secondAttribute="top" constant="589" id="UDW-ez-lel"/>
+                            <constraint firstItem="QcR-yD-Npt" firstAttribute="bottom" secondItem="jgP-3G-Z0A" secondAttribute="bottom" constant="5" id="Ak2-Gn-sT5"/>
                             <constraint firstItem="eNj-HC-CCT" firstAttribute="bottom" secondItem="QcR-yD-Npt" secondAttribute="bottom" id="bGv-5e-kpf"/>
                             <constraint firstItem="eNj-HC-CCT" firstAttribute="centerX" secondItem="QAr-Jw-XPo" secondAttribute="centerX" id="eZx-jY-eOe"/>
                             <constraint firstItem="eNj-HC-CCT" firstAttribute="trailing" secondItem="QcR-yD-Npt" secondAttribute="trailing" id="kCq-p6-UwL"/>
@@ -76,33 +40,47 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="QcR-yD-Npt"/>
                     </view>
-                    <navigationItem key="navigationItem" id="9n4-MS-tbT"/>
+                    <navigationItem key="navigationItem" id="9n4-MS-tbT">
+                        <barButtonItem key="leftBarButtonItem" systemItem="refresh" id="61O-p8-cfG">
+                            <connections>
+                                <action selector="refreshPlaces:" destination="Zxu-pz-akw" id="tED-rh-573"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Filter" image="icons8-funnel-100" id="FVU-cL-QDJ">
+                            <inset key="imageInsets" minX="0.0" minY="4" maxX="0.0" maxY="0.0"/>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
+                        <outlet property="filter" destination="FVU-cL-QDJ" id="0ix-8x-bul"/>
                         <outlet property="labelLocation" destination="jgP-3G-Z0A" id="8tK-7L-35E"/>
                         <outlet property="mapRecycle" destination="eNj-HC-CCT" id="Ltq-vo-qZE"/>
+                        <outlet property="refresh" destination="61O-p8-cfG" id="f34-6o-rtw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kuf-Z9-0cB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1920.8" y="135.38230884557723"/>
+            <point key="canvasLocation" x="2860" y="135.38230884557723"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="q9Y-ot-97T">
+        <scene sceneID="vm8-li-zpa">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xoL-FK-TTy" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="iob-pg-wtl" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="et3-6K-ykS">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="HV6-E0-tco">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="qK1-AR-4yx"/>
+                        <segue destination="Zxu-pz-akw" kind="relationship" relationship="rootViewController" id="aMP-n6-eT5"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="sdt-vQ-GVP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uuR-u2-ffk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="130.40000000000001" y="138.0809595202399"/>
+            <point key="canvasLocation" x="1920.8" y="135.38230884557723"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="icons8-funnel-100" width="50" height="50"/>
+    </resources>
 </document>

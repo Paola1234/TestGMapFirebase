@@ -16,6 +16,8 @@ class MapViewController: UIViewController {
     @IBOutlet weak var mapRecycle: GMSMapView!
     @IBOutlet weak var labelLocation: UILabel!
     
+    @IBOutlet weak var refresh: UIBarButtonItem!
+    @IBOutlet weak var filter: UIBarButtonItem!
     
     //Constants/properties
     private var searchedTypes = ["Plástico", "Vidrio", "Cartón", "Papel", "Metal"]
@@ -77,7 +79,11 @@ class MapViewController: UIViewController {
         }
       }
     }
-
+   // Refresh places in the current map
+    @IBAction func refreshPlaces(_ sender: Any) {
+        fetchNearbyPlaces(coordinate: mapRecycle.camera.target)
+    }
+    
     
     
 }
