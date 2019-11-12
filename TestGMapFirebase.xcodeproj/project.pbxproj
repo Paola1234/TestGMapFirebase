@@ -17,7 +17,11 @@
 		28E2DE3423736B470021D8FF /* TestGMapFirebaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E2DE3323736B470021D8FF /* TestGMapFirebaseTests.swift */; };
 		28E2DE3F23736B470021D8FF /* TestGMapFirebaseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E2DE3E23736B470021D8FF /* TestGMapFirebaseUITests.swift */; };
 		5A3ACE12B0F9475C66B7BFE3 /* Pods_TestGMapFirebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A1540B43A39C920B7FF7ABD /* Pods_TestGMapFirebase.framework */; };
-		F0F53A3A2374796800104AC7 /* RecyclingPlaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F53A392374796800104AC7 /* RecyclingPlaces.swift */; };
+		F00171512375D649007423E7 /* GoogleDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00171502375D649007423E7 /* GoogleDataProvider.swift */; };
+		F00171532375FF08007423E7 /* TypesTableViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00171522375FF08007423E7 /* TypesTableViewControllerDelegate.swift */; };
+		F09C92B62374BE43007823DC /* Center.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09C92B52374BE43007823DC /* Center.swift */; };
+		F09C92B82374C488007823DC /* GooglePlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09C92B72374C488007823DC /* GooglePlace.swift */; };
+		F09C92BD2374E22D007823DC /* RecycleMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09C92BC2374E22D007823DC /* RecycleMarker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,7 +60,11 @@
 		28E2DE3E23736B470021D8FF /* TestGMapFirebaseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestGMapFirebaseUITests.swift; sourceTree = "<group>"; };
 		28E2DE4023736B470021D8FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A46568E6C633CD43527C6635 /* Pods-TestGMapFirebase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestGMapFirebase.debug.xcconfig"; path = "Target Support Files/Pods-TestGMapFirebase/Pods-TestGMapFirebase.debug.xcconfig"; sourceTree = "<group>"; };
-		F0F53A392374796800104AC7 /* RecyclingPlaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecyclingPlaces.swift; sourceTree = "<group>"; };
+		F00171502375D649007423E7 /* GoogleDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleDataProvider.swift; sourceTree = "<group>"; };
+		F00171522375FF08007423E7 /* TypesTableViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypesTableViewControllerDelegate.swift; sourceTree = "<group>"; };
+		F09C92B52374BE43007823DC /* Center.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Center.swift; sourceTree = "<group>"; };
+		F09C92B72374C488007823DC /* GooglePlace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GooglePlace.swift; sourceTree = "<group>"; };
+		F09C92BC2374E22D007823DC /* RecycleMarker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RecycleMarker.swift; path = TestGMapFirebase/RecycleMarker.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +127,7 @@
 		28E2DE1B23736B380021D8FF /* TestGMapFirebase */ = {
 			isa = PBXGroup;
 			children = (
+				F09C92B92374C715007823DC /* Model */,
 				28E2DE1C23736B380021D8FF /* AppDelegate.swift */,
 				28E2DE1E23736B380021D8FF /* SceneDelegate.swift */,
 				28E2DE2023736B380021D8FF /* ViewController.swift */,
@@ -127,7 +136,6 @@
 				28E2DE2723736B460021D8FF /* LaunchScreen.storyboard */,
 				28E2DE2A23736B460021D8FF /* Info.plist */,
 				28B00777237383FC0057EAB7 /* MapViewController.swift */,
-				F0F53A392374796800104AC7 /* RecyclingPlaces.swift */,
 			);
 			path = TestGMapFirebase;
 			sourceTree = "<group>";
@@ -158,6 +166,18 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F09C92B92374C715007823DC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F09C92B72374C488007823DC /* GooglePlace.swift */,
+				F09C92B52374BE43007823DC /* Center.swift */,
+				F09C92BC2374E22D007823DC /* RecycleMarker.swift */,
+				F00171502375D649007423E7 /* GoogleDataProvider.swift */,
+				F00171522375FF08007423E7 /* TypesTableViewControllerDelegate.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -170,6 +190,7 @@
 				28E2DE1623736B370021D8FF /* Frameworks */,
 				28E2DE1723736B370021D8FF /* Resources */,
 				36FD4A85284E9AC55CF79993 /* [CP] Copy Pods Resources */,
+				B91A6CE50AB0667A2241F1CC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -326,6 +347,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		B91A6CE50AB0667A2241F1CC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TestGMapFirebase/Pods-TestGMapFirebase-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TestGMapFirebase/Pods-TestGMapFirebase-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TestGMapFirebase/Pods-TestGMapFirebase-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -334,10 +372,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				28E2DE2123736B380021D8FF /* ViewController.swift in Sources */,
-				F0F53A3A2374796800104AC7 /* RecyclingPlaces.swift in Sources */,
 				28E2DE1D23736B380021D8FF /* AppDelegate.swift in Sources */,
 				28E2DE1F23736B380021D8FF /* SceneDelegate.swift in Sources */,
+				F09C92B62374BE43007823DC /* Center.swift in Sources */,
 				28B00778237383FC0057EAB7 /* MapViewController.swift in Sources */,
+				F00171512375D649007423E7 /* GoogleDataProvider.swift in Sources */,
+				F09C92B82374C488007823DC /* GooglePlace.swift in Sources */,
+				F09C92BD2374E22D007823DC /* RecycleMarker.swift in Sources */,
+				F00171532375FF08007423E7 /* TypesTableViewControllerDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,7 +484,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -496,7 +538,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -512,7 +554,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TB9C847KLP;
 				INFOPLIST_FILE = TestGMapFirebase/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -530,7 +574,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TB9C847KLP;
 				INFOPLIST_FILE = TestGMapFirebase/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -549,7 +595,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = TestGMapFirebaseTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -570,7 +616,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = TestGMapFirebaseTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -590,6 +636,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = TestGMapFirebaseUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -609,6 +656,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = TestGMapFirebaseUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

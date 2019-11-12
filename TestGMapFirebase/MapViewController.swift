@@ -8,6 +8,7 @@
 
 import UIKit
 import GoogleMaps
+import GooglePlaces
 
 class MapViewController: UIViewController {
 
@@ -16,13 +17,16 @@ class MapViewController: UIViewController {
     @IBOutlet weak var labelLocation: UILabel!
     
     
-    //Constants
+    //Constants/properties
+    private var searchedTypes = ["Plástico", "Vidrio", "Cartón", "Papel", "Metal"]
     private let locationManager = CLLocationManager()
+    private let dataProvider = GoogleDataProvider()
+    private let searchRadius: Double = 1000
+
     
     //View Did Load
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         
         //Ask for authorization for location and gets current location
         locationManager.delegate = self as! CLLocationManagerDelegate
@@ -61,7 +65,30 @@ class MapViewController: UIViewController {
       }
     }
     
+    private func fetchNearbyPlaces(coordinate: CLLocationCoordinate2D) {
+      // Clear the map of all the markers
+      mapRecycle.clear()
+      // Use dataProvider to query Google for nearby places within the searchRadius, filtered to the user’s selected types
+      dataProvider.fetchPlacesNearCoordinate(coordinate, radius:searchRadius, types: searchedTypes) { places in
+        places.forEach {
+          // Iterate through the results returned in the completion closure and create a PlaceMarker for each result and sets the marker in the map.
+          let marker = RecycleMarker(place: $0)
+          marker.map = self.mapRecycle
+        }
+      }
+    }
+
     
+    
+}
+
+// MARK: - TypesTableViewControllerDelegate
+extension MapViewController: TypesTableViewControllerDelegate {
+  func typesController(_ controller: TypesTableViewController, didSelectTypes types: [String]) {
+    searchedTypes = controller.selectedTypes.sorted()
+    dismiss(animated: true)
+    fetchNearbyPlaces(coordinate: mapRecycle.camera.target)
+  }
 }
 
 // MARK: - CLLocationManagerDelegate
@@ -94,7 +121,16 @@ extension MapViewController: CLLocationManagerDelegate {
       
     // Tell locationManager you’re no longer interested in updates; you don’t want to follow a user around as their initial location is enough for you to work with
     locationManager.stopUpdatingLocation()
-  }
+  
+    // the user has the ability to change the types of places to display on the map, so needs to update the search results if the selected types change.
+    fetchNearbyPlaces(coordinate: location.coordinate)
+    
+    }
+    
+   //Get Places from Firebase
+    func getPlacesFirebase(){
+        
+    }
 }
 
 // MARK: - GMSMapViewDelegate
@@ -107,4 +143,8 @@ extension MapViewController: GMSMapViewDelegate {
 //        Check why error: self.labelLocation.lock()
     }
     
+    
+    func loadLocationsNearFromFirebase(){
+        
+    }
 }

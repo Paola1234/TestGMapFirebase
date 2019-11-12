@@ -8,5 +8,6 @@ target 'TestGMapFirebase' do
   # Pods for TestGMapFirebase
   pod 'GooglePlaces'
   pod 'GoogleMaps'
+  pod 'SwiftyJSON', '~> 4.0'
 
 end

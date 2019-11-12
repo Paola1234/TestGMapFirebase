@@ -1,22 +1,20 @@
 //
-//  RecyclingPlaces.swift
+//  RecycleMarker.swift
 //  TestGMapFirebase
 //
 //  Created by Paola Latino on 11/7/19.
 //  Copyright © 2019 LADY PAOLA LATINO TOVAR. All rights reserved.
 //
 
-import Foundation
-import GoogleMaps
 import UIKit
+import GoogleMaps
 
-class RecyclingPlaces: GMSMarker {
+class RecycleMarker: GMSMarker {
   // 1
-  //let place: GooglePlaces
-    let place
+  let place: GooglePlace
   
   // 2
-    init(place: ){//place: GooglePlaces) {
+  init(place: GooglePlace) {
     self.place = place
     super.init()
     
